@@ -1,0 +1,22 @@
+# Báo cáo công việc cuối ngày:
+1. Chủ đề kiến thức đã tìm hiểu trong ngày
+  - Template and Data Binding
+  - Directive
+  - Pipe
+2. Công việc/hoạt động đã làm trong ngày
+  - Đọc tài liệu và thực hành về Template and Data Binding
+  - Đọc tài liệu và thực hành về Directive
+  - Đọc tài liệu và thực hành về Pipe
+3. Điều tìm hiểu được thấy hữu ích nên chia sẻ với team
+  - Có 3 loại Directive:
+    + Components directives (vd: <component-name></component-name>)
+    + Structural directives (vd: *ngFor, *ngIf)
+    + Attribute directives: sử dụng như 1 attribute của một thẻ html tag  (vd: *ngStyle)
+  - Data Binding:
+    + Để bind dữ liệu ra view, ta sử dụng cặp ngoặc nhọn {{ten_bien}}. ten_bien chính là tên biến bạn đặt phía bên trong file component.ts
+    + Để ràng buộc dữ liệu 2 chiều (two-way binding) ta dùng [(ngModel)]="ten_bien" vào thẻ cần ràng buộc dữ liệu hai chiều (vd: <input type="text" [(ngModel)]="name">)
+      *Lưu ý: cần import { FormsModule } from '@angular/forms' vào app.module.ts để có thể sử dụng ngModel
+  - Tìm hiểu về pipe trong Angular: format dữ liệu hiển thị ra cho người dùng cuối.
+    https://viblo.asia/p/tim-hieu-pipe-trong-angular-GrLZD332Kk0
+4. Điều đang tìm hiểu mà thấy khó  hiểu: ...
+5. Vấn đề đang gặp phải: ...

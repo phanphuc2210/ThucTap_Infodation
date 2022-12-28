@@ -1,0 +1,16 @@
+# Báo cáo công việc cuối ngày:
+1. Chủ đề kiến thức đã tìm hiểu trong ngày
+  - Angular Module
+  - Angular Component
+  - Angular lifecyle hook
+2. Công việc/hoạt động đã làm trong ngày
+  - Đọc tài liệu và thực hành về Module trong Angular
+  - Đọc tài liệu và thực hành về Component trong Angular
+  - Đọc tài liệu và thực hành về Lifecycle hooks trong Angular
+3. Điều tìm hiểu được thấy hữu ích nên chia sẻ với team
+  - Bài chia sẻ tiếng Việt về Lifecycle hooks và change detection trong Angular (có ví dụ dễ hiểu): 
+    https://dammecode.wordpress.com/2022/01/24/lam-ban-ve-angular-life-cycle-va-change-detection/
+  -  Bài chia sẻ tiếng Anh về Lifecycle hooks (có giải thích dễ hiểu (maybe :p))
+    https://indepth.dev/posts/1494/complete-guide-angular-lifecycle-hooks
+4. Điều đang tìm hiểu mà thấy khó  hiểu: ...
+5. Vấn đề đang gặp phải: ...

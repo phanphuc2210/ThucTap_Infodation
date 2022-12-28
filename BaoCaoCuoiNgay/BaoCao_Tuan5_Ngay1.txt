@@ -1,0 +1,20 @@
+# Báo cáo công việc cuối ngày:
+1. Chủ đề kiến thức đã tìm hiểu trong ngày
+  - Angular Material
+  - Angular CDK
+2. Công việc/hoạt động đã làm trong ngày
+  - Đọc tài liệu về Angular Material
+  - Đọc tài liệu về Angular CDK
+  - Thực hành tạo giao diện với Angular Material và Angular CDK
+3. Điều tìm hiểu được thấy hữu ích nên chia sẻ với team
+  - Angular Material là một thư viện cung cấp sẵn các componet UI, giúp các nhà phát triển Angular lập trình giao diện nhanh hơn, mà không cần code lại giao diện thủ công
+  - CDK là viết tắt của Component Dev Kit, là một tập hợp các hành vi nguyên thủy (behavior primitives) để xây dựng các thành phần giao diện người dùng. Nó cho phép lập trình viên tùy biến sau hơn các component UI.
+  - Các thư viện UI tương tự: PrimeNG, NG-ZORRO, ...
+  - Code mà mình đã tìm hiểu và thực hành về Angular Material (tạo bảng, phân trang cho bảng, thanh navigation có responsive , custom themes)
+    + Link GitHub: https://github.com/phanphuc2210/MaterialUI
+    + Cách tạo thanh navigation responsive bằng Angular CLI: ng generate @angular/material:navigation <component-name>
+    + Ngoài ra mọi người có thể tạo các Material application bằng CLI: https://material.angular.io/guide/schematics
+    + Custom theme mọi người làm them mẫu và tùy chỉnh theo ý muốn: https://material.angular.io/guide/theming#custom-themes-with-sass
+    + Mọi người có thể chọn màu cho custome theme của mình ở: node_modules -> @angular -> material -> core -> theming -> _palette.scss
+4. Điều đang tìm hiểu mà thấy khó  hiểu: ...
+5. Vấn đề đang gặp phải: ...

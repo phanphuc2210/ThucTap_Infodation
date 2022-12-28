@@ -1,0 +1,30 @@
+# Báo cáo công việc cuối ngày:
+1. Chủ đề kiến thức đã tìm hiểu trong ngày
+  - Angular Route
+  - CanActive
+  - CanDeactivate
+  - Lazy loading
+  - Eager Loading
+2. Công việc/hoạt động đã làm trong ngày
+  - Đọc tài liệu và thực hành về Angular Route
+  - Đọc tài liệu và thực hành về CanActive để bảo vệ Route
+  - Đọc tài liệu và thực hành về CanDeactivate để bảo vệ Route
+3. Điều tìm hiểu được thấy hữu ích nên chia sẻ với team
+  - Khi Route có path là '' (rootPath) và thiết lập redirect mà không có pathMatch: 'full'
+    vd: const routes: Routes = [
+ 	  ...	
+          { path: '', redirectTo: '/login', pathMatch: 'full' },
+          { path: 'login', component: LoginComponent },
+          ...
+	];
+    Vì mặc định Angular sẽ load URL Path theo prefix, do đó path: '' sẽ là prefix của tất cả các url khác, 
+bao gồm cả /login nên khi set redirect mà không set pathMatch: full, chúng ta sẽ tạo ra vòng lặp vô hạn giữa rootPath 
+và component cần redirect. Bug này cũng đã được Angular detect và hiển thị nếu chẳng may các bạn có gặp phải.
+  - Bài chia sẻ và ví dụ minh họa về CanActive và CanDeactivate để bảo vệ Route:
+    https://viblo.asia/p/bao-ve-routes-su-dung-guards-trong-angular-3Q75wWX35Wb
+  - Cậu lệnh tạo guard (tạo lớp implements CanActive, CanDeactivate các kiểu) trong angular:
+    ng generate guard tên-guard
+  - Video hướng dẫn làm chức năng login thì mới cho phép truy cập vào các Route (CanActive):
+    https://youtu.be/GMUlwK7owro
+4. Điều đang tìm hiểu mà thấy khó  hiểu: ...
+5. Vấn đề đang gặp phải: ...

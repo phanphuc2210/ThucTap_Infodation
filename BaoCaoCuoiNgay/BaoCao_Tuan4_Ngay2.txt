@@ -1,0 +1,19 @@
+# Báo cáo công việc cuối ngày:
+1. Chủ đề kiến thức đã tìm hiểu trong ngày
+  - Form
+    + Template-driven forms
+    + Reactive forms
+      * Forms Array
+    + Form Validation
+2. Công việc/hoạt động đã làm trong ngày
+  - Đọc tài liệu và thực hành về Template-driven forms và Template-driven forms validation
+  - Đọc tài liệu và thực hành về Reactive forms và Reactive forms validation
+  - Thực hành phần Form Array
+3. Điều tìm hiểu được thấy hữu ích nên chia sẻ với team
+  - Hầu hết các ứng dụng web hiện đại đều làm việc với forms để thu thập dữ liệu từ người dùng. Angular cung cấp cho chúng ta hai phương pháp để tạo forms, một là Template-driven forms và hai là Reactive forms hay Model-driven forms.
+    + Template-driven Forms: Cơ chế hoạt động của dạng forms này sẽ chủ yếu dựa vào các directives trên template như NgForm, NgModel, required, etc; để làm việc. Form dạng này sử dụng Two-way binding để update data model giữa template và component.
+    + Reactive Forms: Chúng ta sẽ xây dựng form từ các model, là các object có một số chức năng đặc biệt để quản lý được các form input. Nó cũng sử dụng một số (nhưng rất ít) các directives.
+  - Nội dùng về phần Form mà mình đã trình bày hồi sáng, có cả code đầy đủ (mọi người đọc hết nội dung mình tổng hợp và các đường link tham khảo là nắm vững được về nội dung này ;v)
+    link github: https://github.com/phanphuc2210/Forms_Angular 
+4. Điều đang tìm hiểu mà thấy khó  hiểu: ...
+5. Vấn đề đang gặp phải: ...

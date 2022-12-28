@@ -1,0 +1,124 @@
+<div class="card">
+  <p-card
+    header="Admin cho thêm bớt câu hỏi !"
+    subheader="by Huy Nguyễn"
+    [style]="{ width: '100%' }"
+    styleClass="p-card-shadow"
+  >
+    <button
+      pButton
+      pRipple
+      type="button"
+      icon="pi pi-plus"
+      class="p-button-rounded"
+      (click)="addQuestion()"
+    ></button>
+    <p-splitter
+      [style]="{ minHeight: '200px' }"
+      [panelSizes]="[40, 60]"
+      styleClass="p-mb-5"
+    >
+      <ng-template pTemplate>
+        <div
+          class="p-col p-d-flex p-ai-center p-jc-center"
+          style="cursor: pointer; width: 100%; margin: 10px"
+        >
+          <li *ngIf="newQuestion" style="cursor: pointer">
+            {{ newQuestion.question }}
+            <br />
+            <span style="font-style: italic; margin-left: 30px">
+              <!-- {{ newQuestion.question.toString().substring(0, 20) }} -->
+            </span>
+          </li>
+          <li
+            *ngFor="let question of questions"
+            style="cursor: pointer"
+            (click)="viewQuestion(question)"
+            [ngClass]="getSelectedClass(question)"
+          >
+            {{ question.question }}
+            <br />
+            <span style="font-style: italic; margin-left: 30px">
+              <!-- {{ question.question.toString().substring(0, 20) }} -->
+            </span>
+          </li>
+        </div>
+      </ng-template>
+      <ng-template pTemplate>
+        <div *ngIf="newQuestion" style="width: 100%; margin: 10px">
+          <br />
+          <span class="p-float-label">
+            <textarea
+              rows="1"
+              pInputTextarea
+              style="width: 100%"
+              [(ngModel)]="newQuestion.question"
+            ></textarea>
+            <label for="float-input">Câu hỏi</label>
+          </span>
+          <br />
+          <br />
+          <span
+            class="p-float-label"
+            *ngFor="
+              let answer of newQuestion.answers;
+              let i = index;
+              trackBy: trackByFn
+            "
+          >
+            <textarea
+              rows="2"
+              pInputTextarea
+              style="width: 100%"
+              [(ngModel)]="newQuestion.answers[i]"
+            ></textarea>
+            <label for="float-input">Trả lời #{{ i + 1 }}</label>
+            <br /><br />
+          </span>
+          <br />
+          <label for="integeronly">Câu trả lời đúng: </label>
+          <p-inputNumber
+            inputId="integeronly"
+            [(ngModel)]="newQuestion.correctAnswer"
+          >
+          </p-inputNumber>
+          <br /><br />
+          <p-button
+            label="Save"
+            icon="pi pi-check"
+            (click)="saveQuestion()"
+          ></p-button>
+          <p-button
+            label="Cancel"
+            icon="pi pi-times"
+            styleClass="p-button-secondary"
+            [style]="{ 'margin-left': '.5em' }"
+            (click)="cancelAddQuestion()"
+          ></p-button>
+        </div>
+        <div
+          class="p-col p-d-flex p-ai-center p-jc-center"
+          *ngIf="selectedQuestion && !newQuestion"
+          style="width: 100%; margin: 10px"
+        >
+          <span style="font-weight: bold">{{ selectedQuestion.question }}</span>
+          <br /><br />
+          <span
+            class="p-float-label"
+            *ngFor="
+              let answer of selectedQuestion.answers;
+              let i = index;
+              trackBy: trackByFn
+            "
+          >
+            {{ i + 1 }}. {{ answer }}
+          </span>
+          <br />
+          <label for="integeronly">Câu trả lời đúng: </label>
+          {{ selectedQuestion.correctAnswer }}
+        </div>
+      </ng-template>
+    </p-splitter>
+  </p-card>
+</div>
+<p-toast></p-toast>
